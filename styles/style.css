@@ -623,5 +623,11 @@ input[type="submit"]:hover {
     font-size: 14px;
   }
 }
+.aboutus header p{
+  font: bold;
+  color: #ccc;
+
+
+}
 
  
