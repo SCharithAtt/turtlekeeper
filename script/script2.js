@@ -105,7 +105,7 @@ document.getElementById("emailAddress2").addEventListener('input', function () {
 
 // Validate mobile Number
 document.getElementById("mobileNumber").addEventListener('input', function () {
-  if (!(isNaN(mobileNumber.value)) ) {
+  if (!isNaN(mobileNumber.value) && mobileNumber.value.length>=6  ) {
     validMobileNumber = true;
   } else {
     validMobileNumber = false;
