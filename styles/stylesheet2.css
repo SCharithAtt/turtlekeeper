@@ -289,7 +289,7 @@ input.search-box {
 .select-box ol {
   list-style: none;
   max-height: 23rem;
-  overflow: overlay;
+  overflow: scroll;
   z-index: 5;
 }
 
