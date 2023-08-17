@@ -630,4 +630,13 @@ input[type="submit"]:hover {
 
 }
 
- 
+ .bookTicketsClass{
+
+  background-color: rgb(75, 171, 171); /* Set the background color to grey */
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 30px 30px;
+ }

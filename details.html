@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Details-Hikkaduwa Hatchery</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="Website with details about turtle hatcheries in sri lanka">
+            <link rel="stylesheet" href="styles/stylesheet2.css">
+            <link rel="icon" href="images/Logo.png">
+            <script src="script/telephonejs.js"></script>
+    </head>
+    <body>
+        <!--Header common to all pages-->
+    <header>
+        <div class="topic" id="buyTickets">
+            <h1>Buy Tickets</h1>
+        </div>
+    </header>
+
+    <!--Navigation Tab-->   
+    <div id="navigationTab">
+      <p1>Tickets</p1> > <p2>Details</p2> > 
+    </div>
+    <div class="subHeading">
+        <h3>Enter your Details.</h3>
+    </div>
+  
+    <fieldset>
+    
+      <div class="message" id="notice">Please complete required fields Below.
+      </div>
+    <div class="inputAreaWrapper">
+      <div class="inputArea">
+	<div class="infoField">
+        Full Name:
+        <div class="select-box">
+            <input type="text" id="fullName" placeholder="Enter Your Full Name.">
+        </div>
+            
+        
+    </div>
+    <div class="infoField">
+        Mobile Number:
+        <div class="select-box">
+            <div class="selected-option">
+                <div>
+                    <span class="iconify" data-icon="flag:lk-4x3"></span>
+                    <strong>+94</strong>
+                </div>
+                <input id="mobileNumber" type="tel" name="tel" placeholder="Phone Number" minlength="8" maxlength="15" value="+94" >
+            </div>
+            <div class="options">
+                <input type="text" class="search-box" placeholder="Search Country Name">
+                <ol>
+    
+                </ol>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="infoField">
+        Email:
+        <div class="select-box">
+            <input type="email" id="emailAddress" placeholder="Enter Email">
+
+        </div>
+        
+        
+        
+    </div>
+	<div class="infoField">
+    Re-Enter Email:
+    <div class="select-box">
+        <input type="email" id="emailAddress2" placeholder="Re-Enter Your Email">
+    </div>
+</div>
+
+
+<div class="infoField" id="genderArea">
+    Gender: (optional)
+        <input type="radio" id="maleGender" name="genderSelect"><label for="maleGender">Male</label>
+        <input type="radio" id="femaleGender" name="genderSelect"><label for="femaleGender">Female</label>
+</div>
+  </div>
+  <div class="summaryTable">
+  <table id="summaryTable" >
+    <tbody id="summaryTableBody">
+      <tr id="dateRow">
+        <td>Date</td>
+        <td id="summaryTableDate">          </td>
+      </tr>
+      <tr id="timeRow">
+        <td>Time</td>
+        <td id="summaryTableTime"><span id="summaryTableStartTime">        </span> to <span id="summaryTableEndTime">        </span></td>
+      </tr>
+      <tr  id="DurationRow">
+        <td>Duration</td>
+        <td id="summaryTableDuration"><span id="summaryTotalHours"></span> hrs (<span id="summaryNormalHours"></span> Normal : <span id="summaryPeakHours"></span> Peak) </td>
+      </tr>
+      <tr class="summaryTableStaticInfo">
+        <td>Tickets</td>
+        <td>Charges</td>
+      </tr>
+      <tr id="localAdultRow">
+        <td id="localAdultNumberSummary"> SL Adult</td>
+        <td id="localAdultSummary"></td>
+      </tr>
+      <tr id="localChildRow">
+        <td id="localChildNumberSummary">SL Child</td>
+        <td id="localChildSummary"></td>
+      </tr>
+      <tr id="foreignAdultRow">
+        <td id="foreignAdultNumberSummary"> Foreigner Adult</td>
+        <td id="foreignAdultSummary"></td>
+      </tr>
+      <tr id="foreignChildRow">
+        <td id="foreignChildNumberSummary">Foreigner Child</td>
+        <td id="foreignChildSummary"></td>
+      </tr>
+      <tr id="infantRow">
+        <td id="infantNumberSummary">Infant</td>
+        <td id="infantSummary">Free</td>
+      </tr>
+      <tr id="priceRow">
+        <td>Total Payable</td>
+        <td id="totalPayableSummary"></td>
+      </tr>
+    </tbody>
+    </table>
+  </div>
+</div>
+  
+
+
+       
+    
+   
+    
+    
+
+
+
+</fieldset>
+
+
+
+<br>
+<br>
+<button id="detailSubmitButton" class="submitButtonClass" type="submit" disabled>Continue With Purchase</button>
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<footer class="footer">
+  <p>&copy; 2023 Senura Attanayake - TurtleKeeper. All rights reserved.</p>
+</footer>
+
+<script type="text/javascript" src="script/script2.js"></script>
+    </body>
+</html>

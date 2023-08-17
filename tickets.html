@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Get Tickets-Hikkaduwa Hatchery</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="Website with details about turtle hatcheries in sri lanka">
+            <link rel="stylesheet" href="styles/stylesheet2.css">
+            <link rel="icon" href="images/Logo.png">
+    </head>
+    <body>
+
+
+  <!--Header common to all pages-->
+    <header>
+        <div class="topic" id="buyTickets">
+            <h1>Buy Tickets</h1>
+        </div>
+    </header>
+
+    <!--Navigation Tab-->   
+    <div id="navigationTab">
+      <p1>Tickets</p1> 
+    </div>
+  
+    <fieldset>
+  <div class="inputAreaWrapper">
+      <div class="inputArea">
+    <!--Select Date--> 
+    <div id="datesSection" >
+        <h3>Select Date</h3>
+        
+        <input type="date" id="selectDate" >
+
+    </div>
+
+
+<!--Duaration Select-->
+<br>
+<br>
+<div id="duration">
+  <h3>Select Time</h3>
+  <div id="pickTime">
+    
+    <div id="list1" class="dropdown-check-list" tabindex="100">
+      <span class="anchor">Select Hours</span>
+      <ul class="hours" id="timeSlotList">
+      </ul>
+    </div>
+   
+  </div>
+  <p>You have chosen <span id="indicateTime">no time slots</span></p>
+</div>
+
+
+
+
+
+<!--Guest selection -->
+<br>
+    <div id="guestsSection">
+
+        <h3>Select Number of Guests</h3>
+      <div class="guestCounter">
+      <span class="guestText">Local Adult</span> <span class="counter"><button id="removeLocalAdult">-</button><span id="localAdultNumber"> 0 </span><button id="addLocalAdult">+</button></span>
+      </div>
+      <br>
+      <div class="guestCounter">
+        <span class="guestText">Local Child</span> <span class="counter"><button id="removeLocalChild">-</button><span id="localChildNumber"> 0 </span><button id="addLocalChild">+</button></span>
+      </div>
+      <br>
+      <div class="guestCounter">
+        <span class="guestText">Foreign Adult</span> <span class="counter"><button id="removeForeignAdult">-</button><span id="foreignAdultNumber"> 0 </span><button id="addForeignAdult">+</button></span>
+      </div>
+      <br>
+     <div class="guestCounter">
+      <span class="guestText">Foreign Child</span> <span class="counter"><button id="removeForeignChild">-</button><span id="foreignChildNumber"> 0 </span><button id="addForeignChild">+</button></span>
+      </div>
+      <br>
+      <div class="guestCounter">
+        <span class="guestText">Infant</span> <span class="counter"><button id="removeInfant">-</button><span id="infantNumber"> 0 </span><button id="addInfant">+</button></span>
+      </div>
+    </div>
+  </div>
+  <div class="summaryTable">
+    <table id="summaryTable" border>
+      <tbody id="summaryTableBody">
+        <tr id="dateRow">
+          <td>Date</td>
+          <td id="summaryTableDate">          </td>
+        </tr>
+        <tr id="timeRow">
+          <td>Time</td>
+          <td id="summaryTableTime"><span id="summaryTableStartTime">        </span> to <span id="summaryTableEndTime">        </span></td>
+        </tr>
+        <tr  id="DurationRow">
+          <td>Duration</td>
+          <td id="summaryTableDuration"><span id="summaryTotalHours"></span> hrs (<span id="summaryNormalHours"></span> Normal : <span id="summaryPeakHours"></span> Peak) </td>
+        </tr>
+        <tr class="summaryTableStaticInfo">
+          <td>Tickets</td>
+          <td>Charges ($)</td>
+        </tr>
+        <tr id="localAdultRow">
+          <td id="localAdultNumberSummary"> SL Adult</td>
+          <td id="localAdultSummary"></td>
+        </tr>
+        <tr id="localChildRow">
+          <td id="localChildNumberSummary">SL Child</td>
+          <td id="localChildSummary"></td>
+        </tr>
+        <tr id="foreignAdultRow">
+          <td id="foreignAdultNumberSummary"> Foreigner Adult</td>
+          <td id="foreignAdultSummary"></td>
+        </tr>
+        <tr id="foreignChildRow">
+          <td id="foreignChildNumberSummary">Foreigner Child</td>
+          <td id="foreignChildSummary"></td>
+        </tr>
+        <tr id="infantRow">
+          <td id="infantNumberSummary">Infant</td>
+          <td id="infantSummary">Free</td>
+        </tr>
+        <tr id="priceRow">
+          <td>Total Payable</td>
+          <td id="totalPayableSummary"></td>
+        </tr>
+      </tbody>
+      </table>
+      
+  </div>
+
+</div>
+
+
+
+<!--Rates Table-->
+    <div id="pricing">
+      <br>
+        <h3>Rates</h3>
+        <br>
+        <table border="solid">
+          <tr>
+            <th>Category</th><th>Rate per normal hour($)</th><th>Rate per peak hour($)</th>
+          </tr>
+          <tr>
+            <td>Adult- Sri Lankan</td><td id="localAdultNormalRate"></td><td id="localAdultPeakRate"></td>
+          </tr>
+          <tr>
+            <td>Child- Sri Lankan</td><td id="localChildNormalRate"></td><td id="localChildPeaklRate"></td>
+          </tr>
+          <tr>
+            <td>Adult- Foreign</td><td id="foreignAdultNormalRate"></td><td id="foreignAdultPeakRate"></td>
+          </tr>
+          <tr>
+            <td>Child- Foreign</td><td id="foreignChildNormalRate">5</td><td id="foreignChildPeakRate">8</td>
+          </tr>
+          <tr>
+          <td>Infants(Foreign/Local)</td><td id="infantNormalRate">Free</td><td id="infantPeakRate">Free</td>
+          </tr>
+        </table>
+        <br>
+        <br>
+    </div>
+      <!--Summary Table-->
+    
+    <br>
+    <br>
+    
+    <button id="ticketSubmitButton" class="submitButtonClass" type="submit" disabled>Continue With Purchase</button>
+
+  </fieldset>
+  <footer class="footer">
+    <p>&copy; 2023 Senura Attanayake - TurtleKeeper. All rights reserved.</p>
+</footer>
+    <script type="text/javascript" src="script/script.js"></script>
+    </body>
+
+</html>
